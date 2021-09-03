@@ -22,11 +22,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
 /* USB Device descriptor parameter */
-#define VENDOR_ID       0xMFKB
+#define VENDOR_ID       0xFEED
 #define PRODUCT_ID      0x4D46
 #define DEVICE_VER      0x0001
 #define MANUFACTURER    MFKB
-#define PRODUCT         dogbone
+#define PRODUCT         Dogbone
 
 /* key matrix size */
 #define MATRIX_ROWS 4
@@ -43,8 +43,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 /* Set 0 if debouncing isn't needed */
 #define DEBOUNCE 5
 
-/* number of backlight levels */
+/* Increasing layers in VIA/VIAL */
+#define DYNAMIC_KEYMAP_LAYER_COUNT 5
 
+/* number of backlight levels */
 #ifdef BACKLIGHT_PIN
 #define BACKLIGHT_LEVELS 3
 #endif
